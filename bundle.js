@@ -23152,7 +23152,7 @@ var Image = function (_Component) {
 				_React2.default.createElement(
 					_reactLazyLoad2.default,
 					{ offsetVertical: 500 },
-					_React2.default.createElement('img', { src: '//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_500/http://www.kenguie.com/images/newHomepage/newProfile.jpg', alt: 'It\'s me!' })
+					_React2.default.createElement('img', { src: '//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_450/http://www.kenguie.com/images/newHomepage/newProfile.jpg', alt: 'It\'s me!' })
 				),
 				_React2.default.createElement(
 					'h1',
