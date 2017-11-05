@@ -4,10 +4,18 @@ class Navigation extends Component {
 	render() {
 		return(
 			<div id="nav">
-				<div className="item">Item 1</div>
-				<div className="item">Item 2</div>
-				<div className="item">Item 3</div>
-				<div className="item">Item 4</div>
+				<a href="//portfolio.kenguie.com">
+					<div className="item">Portfolio</div>
+				</a>
+				<a href="//blog.kenguie.com">
+					<div className="item">Blog</div>
+				</a>
+				<a href="mailto:kg@kenguie.com">
+					<div className="item">Email</div>
+				</a>
+				<a href="//www.linkedin.com/in/kenguie">
+					<div className="item">LinkedIn</div>
+				</a>
 			</div>
 		)
 	}

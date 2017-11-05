@@ -1,11 +1,34 @@
-#nav {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-rows: 75px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-auto-flow: row dense;
-	justify-items: center;
-	align-items: center;
-	font-size: 1.5em;
-	border: 2px solid black;
+.container {
+	max-width: 1880px;
+	margin: 0 auto;
+
+	@media (min-width: 500px) {
+		#nav {
+			grid: 75px / auto-flow 1fr;
+			text-align: center;
+			align-items: center;
+		}
+	}
+
+	#nav {
+		display: grid;
+		grid-gap: 10px;
+		font-size: 1.5em;
+		font-weight: 700;
+
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+	
+		.item {
+			border: 2px solid black;
+			border-radius: 5px;
+
+			&:hover {
+				background-color: aliceblue;
+				box-shadow: 5px 5px 10px green;
+			}
+		}
+	}
 }

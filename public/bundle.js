@@ -21225,7 +21225,7 @@ var App = function (_Component) {
         _react2.default.createElement(
           'h1',
           null,
-          'Homepage!'
+          'Who is Ken Guie?'
         ),
         _react2.default.createElement(_nav2.default, null)
       );
@@ -21278,24 +21278,40 @@ var Navigation = function (_Component) {
 				"div",
 				{ id: "nav" },
 				_React2.default.createElement(
-					"div",
-					{ className: "item" },
-					"Item 1"
+					"a",
+					{ href: "//portfolio.kenguie.com" },
+					_React2.default.createElement(
+						"div",
+						{ className: "item" },
+						"Portfolio"
+					)
 				),
 				_React2.default.createElement(
-					"div",
-					{ className: "item" },
-					"Item 2"
+					"a",
+					{ href: "//blog.kenguie.com" },
+					_React2.default.createElement(
+						"div",
+						{ className: "item" },
+						"Blog"
+					)
 				),
 				_React2.default.createElement(
-					"div",
-					{ className: "item" },
-					"Item 3"
+					"a",
+					{ href: "mailto:kg@kenguie.com" },
+					_React2.default.createElement(
+						"div",
+						{ className: "item" },
+						"Email"
+					)
 				),
 				_React2.default.createElement(
-					"div",
-					{ className: "item" },
-					"Item 4"
+					"a",
+					{ href: "//www.linkedin.com/in/kenguie" },
+					_React2.default.createElement(
+						"div",
+						{ className: "item" },
+						"LinkedIn"
+					)
 				)
 			);
 		}
@@ -23098,7 +23114,7 @@ exports = module.exports = __webpack_require__(42)(undefined);
 
 
 // module
-exports.push([module.i, "#nav {\n  display: grid;\n  grid-gap: 10px;\n  grid-template-rows: 75px;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n  grid-auto-flow: row dense;\n  justify-items: center;\n  align-items: center;\n  font-size: 1.5em;\n  border: 2px solid black;\n}\n", ""]);
+exports.push([module.i, ".container {\n  max-width: 1880px;\n  margin: 0 auto;\n}\n@media (min-width: 500px) {\n  .container #nav {\n    grid: 75px / auto-flow 1fr;\n    text-align: center;\n    align-items: center;\n  }\n}\n.container #nav {\n  display: grid;\n  grid-gap: 10px;\n  font-size: 1.5em;\n  font-weight: 700;\n}\n.container #nav a {\n  text-decoration: none;\n  color: #000;\n}\n.container #nav .item {\n  border: 2px solid black;\n  border-radius: 5px;\n}\n.container #nav .item:hover {\n  background-color: aliceblue;\n  box-shadow: 5px 5px 10px green;\n}\n", ""]);
 
 // exports
 
