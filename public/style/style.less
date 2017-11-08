@@ -1,8 +1,12 @@
-.container {
+#app {
 	max-width: 1880px;
 	margin: 0 auto;
 
 	@media (min-width: 500px) {
+		.container {
+			display: grid;
+		}
+
 		#nav {
 			grid: 75px / auto-flow 1fr;
 			text-align: center;
