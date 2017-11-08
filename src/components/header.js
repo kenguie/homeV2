@@ -5,6 +5,7 @@ class Header extends Component {
 		return(
 			<div id="header">
 				<h1>Who is Ken Guie?</h1>
+				<h1>He's a web developer who you should know!</h1>
 			</div>
 		)
 	}
