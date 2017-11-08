@@ -16,6 +16,9 @@ class Navigation extends Component {
 				<a href="//www.linkedin.com/in/kenguie">
 					<div className="item">LinkedIn</div>
 				</a>
+				<a href="//github.com/kenguie">
+					<div className="item">Github</div>
+				</a>
 			</div>
 		)
 	}

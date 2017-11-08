@@ -6,9 +6,8 @@ class Image extends Component {
 		return(
 			<div id="profileImage">
 				<LazyLoad offsetVertical={500}>
-					<img src="//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_450/http://www.kenguie.com/images/newHomepage/newProfile.jpg" alt="It's me!"/>
+					<img src="//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_350/http://www.kenguie.com/images/newHomepage/newProfile.jpg" alt="It's me!"/>
 				</LazyLoad>
-				<h1>Hi!</h1>
 			</div>
 		)
 	}

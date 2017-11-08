@@ -9,6 +9,6 @@ app.get('/', function(req, res) {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 });
 
-app.listen(3000, function() {
-  console.log('app is listening on port 3000');
+app.listen(4000, function() {
+  console.log('app is listening on port 4000');
 });
