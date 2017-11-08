@@ -21460,6 +21460,10 @@ var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _header = __webpack_require__(54);
+
+var _header2 = _interopRequireDefault(_header);
+
 var _nav = __webpack_require__(36);
 
 var _nav2 = _interopRequireDefault(_nav);
@@ -21507,11 +21511,7 @@ var App = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'container' },
-        _react2.default.createElement(
-          'h1',
-          null,
-          'Who is Ken Guie?'
-        ),
+        _react2.default.createElement(_header2.default, null),
         _react2.default.createElement(_nav2.default, null),
         _react2.default.createElement(_profileImage2.default, null),
         _react2.default.createElement(_bio2.default, null),
@@ -24625,7 +24625,7 @@ exports = module.exports = __webpack_require__(51)(undefined);
 
 
 // module
-exports.push([module.i, "#app {\n  max-width: 1880px;\n  margin: 0 auto;\n}\n@media (min-width: 500px) {\n  #app .container {\n    display: grid;\n  }\n  #app #nav {\n    grid: 75px / auto-flow 1fr;\n    text-align: center;\n    align-items: center;\n  }\n}\n#app #nav {\n  display: grid;\n  grid-gap: 10px;\n  font-size: 1.5em;\n  font-weight: 700;\n}\n#app #nav a {\n  text-decoration: none;\n  color: #000;\n}\n#app #nav .item {\n  border: 2px solid black;\n  border-radius: 5px;\n}\n#app #nav .item:hover {\n  background-color: aliceblue;\n  box-shadow: 5px 5px 10px green;\n}\n#app #profileImage {\n  text-align: center;\n  margin-top: 15px;\n}\n#app #bio {\n  margin: 5px;\n  padding: 10px;\n  border: 2px solid #2A9C7A;\n}\n#app #businessCard {\n  margin-top: 10px;\n  text-align: center;\n}\n#app #footer {\n  text-align: center;\n  margin-top: 10px;\n}\n", ""]);
+exports.push([module.i, "#app {\n  max-width: 1880px;\n  margin: 0 auto;\n}\n#app #header {\n  grid-area: A;\n}\n#app #nav {\n  display: grid;\n  grid-gap: 10px;\n  font-size: 1.5em;\n  font-weight: 700;\n  text-align: center;\n  align-items: center;\n  grid-area: B;\n}\n#app #nav a {\n  text-decoration: none;\n  color: #000;\n}\n#app #nav .item {\n  border: 2px solid black;\n  border-radius: 5px;\n}\n#app #nav .item:hover {\n  background-color: aliceblue;\n  box-shadow: 5px 5px 10px green;\n}\n#app #profileImage {\n  border: 2px solid #2A9C7A;\n  margin: 15px 5px 5px 5px;\n  padding-top: 5px;\n  text-align: center;\n  grid-area: C;\n}\n#app #bio {\n  margin: 5px;\n  padding: 10px;\n  border: 2px solid #2A9C7A;\n  grid-area: D;\n}\n#app #businessCard {\n  margin-top: 10px;\n  text-align: center;\n  grid-area: E;\n}\n#app #footer {\n  text-align: center;\n  margin-top: 10px;\n  grid-area: F;\n}\n@media (min-width: 750px) {\n  #app .container {\n    display: grid;\n    grid-template-areas: \"A A A A\" \"B B B B\" \"C C D D\" \"E E E E\" \"F F F F\";\n  }\n  #app #nav {\n    grid: 75px / auto-flow 1fr;\n  }\n  #app #profileImage {\n    padding: 10px;\n    margin: 5px;\n  }\n}\n", ""]);
 
 // exports
 
@@ -25178,6 +25178,60 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _React = __webpack_require__(7);
+
+var _React2 = _interopRequireDefault(_React);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_Component) {
+	_inherits(Header, _Component);
+
+	function Header() {
+		_classCallCheck(this, Header);
+
+		return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+	}
+
+	_createClass(Header, [{
+		key: "render",
+		value: function render() {
+			return _React2.default.createElement(
+				"div",
+				{ id: "header" },
+				_React2.default.createElement(
+					"h1",
+					null,
+					"Who is Ken Guie?"
+				)
+			);
+		}
+	}]);
+
+	return Header;
+}(_React.Component);
+
+exports.default = Header;
 
 /***/ })
 /******/ ]);

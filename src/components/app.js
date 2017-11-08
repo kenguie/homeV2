@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './header';
 import Nav from './nav';
 import Image from './profileImage';
 import Bio from './bio';
@@ -10,7 +11,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Who is Ken Guie?</h1>
+        <Header />
 				<Nav />
 				<Image />
 				<Bio />
