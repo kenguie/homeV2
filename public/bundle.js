@@ -25264,6 +25264,10 @@ var _React = __webpack_require__(5);
 
 var _React2 = _interopRequireDefault(_React);
 
+var _reactLazyLoad = __webpack_require__(18);
+
+var _reactLazyLoad2 = _interopRequireDefault(_reactLazyLoad);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25282,46 +25286,50 @@ var Freelance = function (_Component) {
   }
 
   _createClass(Freelance, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _React2.default.createElement(
-        "div",
-        { id: "freelance" },
-        _React2.default.createElement("img", { className: "freelanceImage", sizes: "100vw", srcSet: "//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_350/http://www.kenguie.com/images/newHomepage/meWorking.jpg 350w, //res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_600/http://www.kenguie.com/images/newHomepage/meWorking.jpg 600w, //res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/http://www.kenguie.com/images/newHomepage/meWorking.jpg 850w", src: "//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/http://www.kenguie.com/images/newHomepage/meWorking.jpg", alt: "me on my computer" }),
+        'div',
+        { id: 'freelance' },
         _React2.default.createElement(
-          "h2",
-          null,
-          "Self Plug for Web Development Services"
+          _reactLazyLoad2.default,
+          { offsetVertical: 500 },
+          _React2.default.createElement('img', { className: 'freelanceImage', sizes: '100vw', srcSet: '//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_350/http://www.kenguie.com/images/newHomepage/meWorking.jpg 350w, //res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_600/http://www.kenguie.com/images/newHomepage/meWorking.jpg 600w, //res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/http://www.kenguie.com/images/newHomepage/meWorking.jpg 850w', src: '//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/http://www.kenguie.com/images/newHomepage/meWorking.jpg', alt: 'me on my computer' })
         ),
         _React2.default.createElement(
-          "h3",
+          'h2',
           null,
-          "I'm looking for some freelance work on weekends in the field of Web Development"
+          'Self Plug for Web Development Services'
         ),
         _React2.default.createElement(
-          "h3",
+          'h3',
           null,
-          "If you need your website created, redesigned, improved, or moved, I can help!"
+          'I\'m looking for some freelance work on weekends in the field of Web Development'
         ),
         _React2.default.createElement(
-          "h3",
+          'h3',
           null,
-          "Click email above and let me know your issues and what you'd like done."
+          'If you need your website created, redesigned, improved, or moved, I can help!'
         ),
         _React2.default.createElement(
-          "h3",
+          'h3',
           null,
-          "We'll talk about what is involved and gauge how long it might take and we'll get started."
+          'Click email above and let me know your issues and what you\'d like done.'
         ),
         _React2.default.createElement(
-          "h3",
+          'h3',
           null,
-          "As they say, the first consultation is free! There's nothing to lose!"
+          'We\'ll talk about what is involved and gauge how long it might take and we\'ll get started.'
         ),
         _React2.default.createElement(
-          "h5",
+          'h3',
           null,
-          "Examples of work can be found on my portfolio page (some projects are pretty old on that page but the top few show some of my more recent designs). I have experience with ads too if that's something you need. Google's DFP, Taboola, Outbrain to name a few companies I've worked with. Let me know!"
+          'As they say, the first consultation is free! There\'s nothing to lose!'
+        ),
+        _React2.default.createElement(
+          'h5',
+          null,
+          'Examples of work can be found on my portfolio page (some projects are pretty old on that page but the top few show some of my more recent designs). I have experience with ads too if that\'s something you need. Google\'s DFP, Taboola, Outbrain to name a few companies I\'ve worked with. Let me know!'
         )
       );
     }
