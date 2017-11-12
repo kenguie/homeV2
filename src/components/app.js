@@ -4,6 +4,7 @@ import Nav from './nav';
 import Image from './profileImage';
 import Bio from './bio';
 import BizCard from './bizCard';
+import Freelance from './freelance';
 import Footer from './footer';
 import css from '../../public/style/style.less';
 
@@ -15,6 +16,7 @@ export default class App extends Component {
 				<Nav />
 				<Image />
 				<Bio />
+        <Freelance />
 				<BizCard />
 				<Footer />
       </div>

@@ -4,7 +4,7 @@
 	margin: 0 auto;
 
 	#header {
-		grid-area: A;
+		grid-area: header;
 	}
 
 	#nav {
@@ -14,7 +14,7 @@
 		font-weight: 700;
 		text-align: center;
 		align-items: center;
-		grid-area: B;
+		grid-area: nav;
 
 	a {
 		text-decoration: none;
@@ -35,39 +35,66 @@
 	#profileImage {
 		border: 2px solid #2A9C7A;
 		margin: 15px 5px 5px 5px;
-		padding-top: 5px;
+		padding: 15px;
 		text-align: center;
-		grid-area: C;
+		grid-area: bioImg;
 	}
 
 	#bio {
 		margin: 5px;
 		padding: 10px;
 		border: 2px solid #2A9C7A;
-		grid-area: D;
+		grid-area: bio;
 	}
 
 	#businessCard {
 		margin-top: 10px;
 		text-align: center;
-		grid-area: E;
+		grid-area: bizCard;
+
+		img:hover {
+			background-color: aliceblue;
+			box-shadow: 10px 10px 15px green;
+		}
+	}
+
+	#freelance {
+		text-align: center;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+		border: 2px solid #2A9C7A;
+		grid-area: freelance;
+
+		img {
+			padding-top: 10px;
+			min-width: 350px;
+			max-width: 350px;
+		}
+
+		h5 {
+			max-width: 1400px;
+			margin: 0 auto;
+			padding-bottom: 10px;
+		}
 	}
 
 	#footer {
 		text-align: center;
 		margin-top: 10px;
-		grid-area: F;
+		grid-area: footer;
 	}
 
 	@media (min-width: 750px) {
 		.container {
 			display: grid;
 			grid-template-areas: 
-				"A A A A"
-				"B B B B"
-				"C C D D"
-				"E E E E"
-				"F F F F"
+				"header    header    header   	header"
+				"nav       nav       nav      	nav"
+				"bioImg    bioImg    bio      	bio"
+				"freelance freelance freelance 	freelance"
+				"bizCard   bizCard   bizCard  	bizCard"
+				"footer    footer    footer   	footer"
 		}
 
 		#nav {
@@ -78,6 +105,13 @@
 		#profileImage {
 			padding: 10px;
 			margin: 5px;
+		}
+	}
+
+	@media (min-width: 900px) {
+		#freelance img {
+			min-width: 850px;
+			max-width: 850px;
 		}
 	}
 }

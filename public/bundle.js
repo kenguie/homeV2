@@ -21480,6 +21480,10 @@ var _bizCard = __webpack_require__(48);
 
 var _bizCard2 = _interopRequireDefault(_bizCard);
 
+var _freelance = __webpack_require__(55);
+
+var _freelance2 = _interopRequireDefault(_freelance);
+
 var _footer = __webpack_require__(49);
 
 var _footer2 = _interopRequireDefault(_footer);
@@ -21515,6 +21519,7 @@ var App = function (_Component) {
         _react2.default.createElement(_nav2.default, null),
         _react2.default.createElement(_profileImage2.default, null),
         _react2.default.createElement(_bio2.default, null),
+        _react2.default.createElement(_freelance2.default, null),
         _react2.default.createElement(_bizCard2.default, null),
         _react2.default.createElement(_footer2.default, null)
       );
@@ -23363,7 +23368,7 @@ var Navigation = function (_Component) {
 				{ id: "nav" },
 				_React2.default.createElement(
 					"a",
-					{ href: "//portfolio.kenguie.com" },
+					{ href: "//portfolio.kenguie.com", target: "_blank" },
 					_React2.default.createElement(
 						"div",
 						{ className: "item" },
@@ -23372,7 +23377,7 @@ var Navigation = function (_Component) {
 				),
 				_React2.default.createElement(
 					"a",
-					{ href: "//blog.kenguie.com" },
+					{ href: "//blog.kenguie.com", target: "_blank" },
 					_React2.default.createElement(
 						"div",
 						{ className: "item" },
@@ -23390,7 +23395,7 @@ var Navigation = function (_Component) {
 				),
 				_React2.default.createElement(
 					"a",
-					{ href: "//www.linkedin.com/in/kenguie" },
+					{ href: "//www.linkedin.com/in/kenguie", target: "_blank" },
 					_React2.default.createElement(
 						"div",
 						{ className: "item" },
@@ -23399,7 +23404,7 @@ var Navigation = function (_Component) {
 				),
 				_React2.default.createElement(
 					"a",
-					{ href: "//github.com/kenguie" },
+					{ href: "//github.com/kenguie", target: "_blank" },
 					_React2.default.createElement(
 						"div",
 						{ className: "item" },
@@ -24581,9 +24586,13 @@ var BizCard = function (_Component) {
 				'div',
 				{ id: 'businessCard' },
 				_React2.default.createElement(
-					_reactLazyLoad2.default,
-					{ offsetVertical: 500 },
-					_React2.default.createElement('img', { src: '//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_350/http://www.kenguie.com/images/newHomepage/bizCard2.jpg', alt: 'Business Card' })
+					'a',
+					{ href: '//www.linkedin.com/in/kenguie', target: '_blank' },
+					_React2.default.createElement(
+						_reactLazyLoad2.default,
+						{ offsetVertical: 500 },
+						_React2.default.createElement('img', { src: '//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_350/http://www.kenguie.com/images/newHomepage/bizCard2.jpg', alt: 'Business Card' })
+					)
 				)
 			);
 		}
@@ -24684,7 +24693,7 @@ exports = module.exports = __webpack_require__(52)(undefined);
 
 
 // module
-exports.push([module.i, "#app {\n  max-width: 1880px;\n  min-width: 400px;\n  margin: 0 auto;\n}\n#app #header {\n  grid-area: A;\n}\n#app #nav {\n  display: grid;\n  grid-gap: 10px;\n  font-size: 1.5em;\n  font-weight: 700;\n  text-align: center;\n  align-items: center;\n  grid-area: B;\n}\n#app #nav a {\n  text-decoration: none;\n  color: #000;\n}\n#app #nav .item {\n  border: 2px solid black;\n  border-radius: 5px;\n}\n#app #nav .item:hover {\n  background-color: aliceblue;\n  box-shadow: 5px 5px 10px green;\n}\n#app #profileImage {\n  border: 2px solid #2A9C7A;\n  margin: 15px 5px 5px 5px;\n  padding-top: 5px;\n  text-align: center;\n  grid-area: C;\n}\n#app #bio {\n  margin: 5px;\n  padding: 10px;\n  border: 2px solid #2A9C7A;\n  grid-area: D;\n}\n#app #businessCard {\n  margin-top: 10px;\n  text-align: center;\n  grid-area: E;\n}\n#app #footer {\n  text-align: center;\n  margin-top: 10px;\n  grid-area: F;\n}\n@media (min-width: 750px) {\n  #app .container {\n    display: grid;\n    grid-template-areas: \"A A A A\" \"B B B B\" \"C C D D\" \"E E E E\" \"F F F F\";\n  }\n  #app #nav {\n    grid: 75px / auto-flow 1fr;\n    grid-gap: 10px;\n  }\n  #app #profileImage {\n    padding: 10px;\n    margin: 5px;\n  }\n}\n", ""]);
+exports.push([module.i, "#app {\n  max-width: 1880px;\n  min-width: 400px;\n  margin: 0 auto;\n}\n#app #header {\n  grid-area: header;\n}\n#app #nav {\n  display: grid;\n  grid-gap: 10px;\n  font-size: 1.5em;\n  font-weight: 700;\n  text-align: center;\n  align-items: center;\n  grid-area: nav;\n}\n#app #nav a {\n  text-decoration: none;\n  color: #000;\n}\n#app #nav .item {\n  border: 2px solid black;\n  border-radius: 5px;\n}\n#app #nav .item:hover {\n  background-color: aliceblue;\n  box-shadow: 5px 5px 10px green;\n}\n#app #profileImage {\n  border: 2px solid #2A9C7A;\n  margin: 15px 5px 5px 5px;\n  padding: 15px;\n  text-align: center;\n  grid-area: bioImg;\n}\n#app #bio {\n  margin: 5px;\n  padding: 10px;\n  border: 2px solid #2A9C7A;\n  grid-area: bio;\n}\n#app #businessCard {\n  margin-top: 10px;\n  text-align: center;\n  grid-area: bizCard;\n}\n#app #businessCard img:hover {\n  background-color: aliceblue;\n  box-shadow: 10px 10px 15px green;\n}\n#app #freelance {\n  text-align: center;\n  padding: 5px;\n  margin-right: 5px;\n  margin-left: 5px;\n  border: 2px solid #2A9C7A;\n  grid-area: freelance;\n}\n#app #freelance img {\n  padding-top: 10px;\n  min-width: 350px;\n  max-width: 350px;\n}\n#app #freelance h5 {\n  max-width: 1400px;\n  margin: 0 auto;\n  padding-bottom: 10px;\n}\n#app #footer {\n  text-align: center;\n  margin-top: 10px;\n  grid-area: footer;\n}\n@media (min-width: 750px) {\n  #app .container {\n    display: grid;\n    grid-template-areas: \"header    header    header   \\9header\" \"nav       nav       nav      \\9nav\" \"bioImg    bioImg    bio      \\9  bio\" \"freelance freelance freelance \\9  freelance\" \"bizCard   bizCard   bizCard  \\9  bizCard\" \"footer    footer    footer   \\9  footer\";\n  }\n  #app #nav {\n    grid: 75px / auto-flow 1fr;\n    grid-gap: 10px;\n  }\n  #app #profileImage {\n    padding: 10px;\n    margin: 5px;\n  }\n}\n@media (min-width: 900px) {\n  #app #freelance img {\n    min-width: 850px;\n    max-width: 850px;\n  }\n}\n", ""]);
 
 // exports
 
@@ -25237,6 +25246,91 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _React = __webpack_require__(5);
+
+var _React2 = _interopRequireDefault(_React);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Freelance = function (_Component) {
+  _inherits(Freelance, _Component);
+
+  function Freelance() {
+    _classCallCheck(this, Freelance);
+
+    return _possibleConstructorReturn(this, (Freelance.__proto__ || Object.getPrototypeOf(Freelance)).apply(this, arguments));
+  }
+
+  _createClass(Freelance, [{
+    key: "render",
+    value: function render() {
+      return _React2.default.createElement(
+        "div",
+        { id: "freelance" },
+        _React2.default.createElement("img", { className: "freelanceImage", sizes: "100vw", srcSet: "//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_350/http://www.kenguie.com/images/newHomepage/meWorking.jpg 350w, //res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_600/http://www.kenguie.com/images/newHomepage/meWorking.jpg 600w, //res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/http://www.kenguie.com/images/newHomepage/meWorking.jpg 850w", src: "//res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/http://www.kenguie.com/images/newHomepage/meWorking.jpg", alt: "me on my computer" }),
+        _React2.default.createElement(
+          "h2",
+          null,
+          "Self Plug for Web Development Services"
+        ),
+        _React2.default.createElement(
+          "h3",
+          null,
+          "I'm looking for some freelance work on weekends in the field of Web Development"
+        ),
+        _React2.default.createElement(
+          "h3",
+          null,
+          "If you need your website created, redesigned, improved, or moved, I can help!"
+        ),
+        _React2.default.createElement(
+          "h3",
+          null,
+          "Click email above and let me know your issues and what you'd like done."
+        ),
+        _React2.default.createElement(
+          "h3",
+          null,
+          "We'll talk about what is involved and gauge how long it might take and we'll get started."
+        ),
+        _React2.default.createElement(
+          "h3",
+          null,
+          "As they say, the first consultation is free! There's nothing to lose!"
+        ),
+        _React2.default.createElement(
+          "h5",
+          null,
+          "Examples of work can be found on my portfolio page (some projects are pretty old on that page but the top few show some of my more recent designs). I have experience with ads too if that's something you need. Google's DFP, Taboola, Outbrain to name a few companies I've worked with. Let me know!"
+        )
+      );
+    }
+  }]);
+
+  return Freelance;
+}(_React.Component);
+
+exports.default = Freelance;
 
 /***/ })
 /******/ ]);
