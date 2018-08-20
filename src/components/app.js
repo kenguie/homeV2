@@ -3,6 +3,7 @@ import Header from './header';
 import Nav from './nav';
 import Image from './profileImage';
 import Bio from './bio';
+import Video from './video';
 import BizCard from './bizCard';
 import Freelance from './freelance';
 import Footer from './footer';
@@ -16,6 +17,7 @@ export default class App extends Component {
 				<Nav />
 				<Image />
 				<Bio />
+        <Video />
         <Freelance />
 				<BizCard />
 				<Footer />
