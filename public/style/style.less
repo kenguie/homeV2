@@ -1,3 +1,30 @@
+@font-face{ 
+	font-family: 'KaushanScript-Regular';
+	src: url('http://www.kenguie.com/css/KaushanScript-Regular.eot');
+	src: url('http://www.kenguie.com/css/KaushanScript-Regular.eot?iefix') format('eot'),
+	     url('http://www.kenguie.com/css/KaushanScript-Regular.woff') format('woff'),
+	     url('http://www.kenguie.com/css/KaushanScript-Regular.ttf') format('truetype'),
+	     url('http://www.kenguie.com/css/KaushanScript-Regular.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'Quicksand-Regular';
+	src: url('http://www.kenguie.com/css/Quicksand-Regular.eot');
+	src: url('http://www.kenguie.com/css/Quicksand-Regular.eot?iefix') format('eot'),
+	     url('http://www.kenguie.com/css/Quicksand-Regular.woff') format('woff'),
+	     url('http://www.kenguie.com/css/Quicksand-Regular.ttf') format('truetype'),
+	     url('http://www.kenguie.com/css/Quicksand-Regular.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'SinkinSans-400Regular';
+	src: url('http://www.kenguie.com/css/SinkinSans-400Regular.eot');
+	src: url('http://www.kenguie.com/css/SinkinSans-400Regular.eot?iefix') format('eot'),
+	     url('http://www.kenguie.com/css/SinkinSans-400Regular.woff') format('woff'),
+	     url('http://www.kenguie.com/css/SinkinSans-400Regular.ttf') format('truetype'),
+	     url('http://www.kenguie.com/css/SinkinSans-400Regular.svg#webfont') format('svg');
+}
+
 #app {
 	max-width: 1880px;
 	min-width: 400px;
@@ -5,6 +32,16 @@
 
 	#header {
 		grid-area: header;
+
+		.line1 {
+			font-family: KaushanScript-Regular;
+			font-size: 60px;
+		}
+
+		.line2 {
+			font-family: Quicksand-Regular;
+			font-size: 45px;
+		}
 	}
 
 	#nav {
@@ -56,6 +93,15 @@
 		border: 2px solid #2A9C7A;
 		grid-area: bio;
 		background-color: aliceblue;
+
+		h1 {
+			font-family: Quicksand-Regular;
+			font-size: 50px;
+		}
+
+		h3 {
+			font-family: SinkinSans-400Regular;
+		}
 	}
 
 	#businessCard {
@@ -77,6 +123,11 @@
     margin-left: 5px;
 		border: 2px solid #2A9C7A;
 		grid-area: video;
+
+		h1 {
+			font-family: Quicksand-Regular;
+			font-size: 35px;
+		}
 	}
 
 	#content_video {
@@ -104,6 +155,15 @@
 			max-width: 1400px;
 			margin: 0 auto;
 			padding-bottom: 10px;
+		}
+
+		h2 {
+			font-family: Quicksand-Regular;
+			font-size: 50px;
+		}
+
+		h3 {
+			font-family: SinkinSans-400Regular;
 		}
 	}
 
