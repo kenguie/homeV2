@@ -114,6 +114,28 @@ body {
 		}
 	}
 
+	#recentWork {
+		margin: 5px;
+    padding: 10px;
+    border: 2px solid #2a9c7a;
+    background-color: #f0f8ff;
+		grid-area: recent;
+
+		h1, h2 {
+			text-align: center;
+			font-family: SinkinSans-400Regular;
+		}
+
+		.images {
+			display: grid;
+			justify-content: center;
+
+			img {
+				max-width: 320px;
+			}
+		}
+	}
+
 	#businessCard {
 		margin-top: 10px;
 		text-align: center;
@@ -200,6 +222,7 @@ body {
 				"header    header    header   	header"
 				"nav       nav       nav      	nav"
 				"bioImg    bioImg    bio      	bio"
+				"recent    recent    recent     recent"
 				"video     video     video      video"
 				"freelance freelance freelance 	freelance"
 				"bizCard   bizCard   bizCard  	bizCard"
@@ -215,9 +238,34 @@ body {
 			padding: 10px;
 			margin: 5px;
 		}
+
+		#recentWork {
+			.images {
+				text-align: center;
+
+				img {
+					max-width: 500px;
+					padding: 20px;
+				}
+			}
+		}
 	}
 
 	@media (min-width: 900px) {
+		#recentWork {
+			.images {
+				display: grid;
+				grid-template: auto / 1fr 1fr;
+				justify-items: center;
+				align-items: center;
+				padding: 30px;
+				
+				img {
+					max-width: none;
+				}
+			}		
+		}
+
 		#freelance img {
 			min-width: 850px;
 			max-width: 850px;
