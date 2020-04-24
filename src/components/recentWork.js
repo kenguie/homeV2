@@ -26,6 +26,21 @@ class Recent extends Component {
             </LazyLoad>
           </a>
         </div>
+        <h2>Here are some images of a Covid Tracking tool I built for myself. Took 30 min or so for the first iteration.</h2>
+        <h2>Cleaned it up and added functionality like the Chart.js chart and other states showing that we did get over the hump!</h2>
+        <h2>Following the dates on the bottom, it reads from right to left.</h2>
+        <div className='images'>
+          <a href="https://kenguie.github.io/myCovidTracker/">
+            <LazyLoad>
+              <img className="work4" sizes="100vw" srcSet="https://res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_350/https://www.kenguie.com/images/workStuff/covid2.png 350w, https://res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_600/https://www.kenguie.com/images/workStuff/covid2.png 600w, https://res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/https://www.kenguie.com/images/workStuff/covid2.png 850w" src="https://res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/https://www.kenguie.com/images/workStuff/covid2.png" alt="Covid Tracker" />
+            </LazyLoad>
+          </a>
+          <a href="https://kenguie.github.io/myCovidTracker/">
+            <LazyLoad>
+              <img className="work5" sizes="100vw" srcSet="https://res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_350/https://www.kenguie.com/images/workStuff/covid1.png 350w, https://res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_600/https://www.kenguie.com/images/workStuff/covid1.png 600w, https://res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/https://www.kenguie.com/images/workStuff/covid1.png 850w" src="https://res.cloudinary.com/image77/image/fetch/dpr_auto,f_auto,q_auto,w_850/https://www.kenguie.com/images/workStuff/covid1.png" alt="Covid Tracker" />
+            </LazyLoad>
+          </a>
+        </div>
 			</div>
 		)
 	}

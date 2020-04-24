@@ -6,7 +6,7 @@ class Video extends Component {
 			<div id="video">
         <h1>Meet Ken Guie, hear about what he knows, what he wants to work on, and if he can help you!</h1>
         <video id="content_video" className="video-js vjs-default-skin" controls preload="auto" controlsList="nodownload">
-          <source src="http://www.kenguie.com/bioVideo/BioVideo-web-8.19.18.mp4" type="video/mp4" />
+          <source src="https://www.kenguie.com/bioVideo/BioVideo-web-8.19.18.mp4" type="video/mp4" />
         </video>
 			</div>
 		)
